@@ -108,14 +108,14 @@ class HelloSpringDataJpaApplicationTests {
 
     }
 
-//    @Test
-//    @DisplayName("Test7: searchByNameUsingQuery")
-//    public void searchByNameUsingQuery() {
-//        List<Product> productList= productRepository.searchByName("Air");
-//
-//        logger.info("====searchByNameUsingQuery: Air====");
-//        productList.forEach(product -> logger.info("--> {}", product));
-//
-//        assertEquals(6, productList.size(), "Expected 6 product containing 'Air'");
-//    }
+    @Test
+    @DisplayName("Test7: searchByNameUsingQuery")
+    public void searchByNameUsingQuery() {
+        List<Product> productList= productRepository.searchByName("Air");
+
+        logger.info("====searchByNameUsingQuery: Air====");
+        productList.forEach(product -> logger.info("--> {}", product));
+
+        assertEquals(6, productList.size(), "Expected 6 product containing 'Air'");
+    }
 }
